@@ -1,7 +1,7 @@
 package JavaBasics;
 
 import java.util.Scanner;
-public class Lab01FireRisk {
+public class FireRisk {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the rainfall:");
