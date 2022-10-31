@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ *Define a class named FruitBasket which represents a fruit basket. The fruit basket contains a list of fruits. The FruitBasket class contains the following:
+ * A private ArrayList<Fruit> data field named items that defines the list of fruits of a fruit basket. Remember to create an empty basket by default.
+ * A method named add(Fruit f) which takes a Fruit object as a parameter and add it to the array list of fruits.
+ * A method named getNumberOfFruits() which returns the number of fruits in the basket.
+ * A method named toString() which returns a string representation of the object as shown in the examples below
  */
 
 class Fruit {
