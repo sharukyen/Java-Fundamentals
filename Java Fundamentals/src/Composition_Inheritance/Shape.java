@@ -1,6 +1,10 @@
 package Composition_Inheritance;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static Composition_Inheritance.Shape.findLargestShape;
 
 /**
  * Define a class named Hexagon which represents a hexagon shape. The Hexagon class contains the following:
@@ -21,6 +25,16 @@ abstract class Shape {
     public void setY(int y) { p.y = y; }
     public void translate(int deltax, int deltay) { p.translate(deltax, deltay); }
     public abstract int getArea();
+    public static Shape findLargestShape(ArrayList<Shape> shapes) {
+        int currentLargest = shapes.get(0).getArea();
+        int currentIndex = 0;
+        for (int i=1; i<shapes.size(); i++)
+            if (shapes.get(i).getArea()> currentLargest)  {
+                currentLargest = shapes.get(i).getArea();
+                currentIndex = i;
+            }
+        return shapes.get(currentIndex);
+    }
     public String toString() { return String.format("%s(%d)",getClass().getName(), getArea()); }
 }
 class Rectangle extends Shape {
@@ -52,5 +66,15 @@ class tests{
         System.out.println(s2.getArea());
         System.out.println(s2.getX());
         System.out.println(s2.getY());
+
+        Shape sh1 = new Hexagon(10, 10, 10);
+        Shape sh2 = new Hexagon(10, 10, 5);
+        Shape s3 = new Rectangle(10, 20, 5, 10);
+        Shape s4 = new Rectangle(10, 20, 5, 15);
+        Shape s5 = new Hexagon(10, 10, 8);
+        Shape[] shapeArrays = new Shape[]{sh1, sh2, s3, s4, s5};
+        ArrayList<Shape> shapes = new ArrayList<Shape>(Arrays.asList( shapeArrays) );
+        Shape largest = findLargestShape(shapes);
+        System.out.println(largest);
     }
 }
