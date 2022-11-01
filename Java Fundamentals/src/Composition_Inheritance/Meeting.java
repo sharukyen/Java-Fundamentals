@@ -3,7 +3,21 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
- *
+ *Define a class called Meeting which stores information about meetings. The meeting has a date (type of LocalDate), place (type of String), and a list of people who will attend the meeting (type of Person).
+ * The instance variable names are meetingDate, meetingPlace and people. The meeting class has a static member: numberOfMeetings to keep track of the number of meeting created.
+ * The class must have the following functionality:
+ * Create a meeting by a date and a place. You may find the LocalDate.parse() useful. You can assume that the parameter date is valid. For example:
+ * Meeting m1 = new Meeting("2020-02-12", "303S.G91");
+ * Return a string representing information about the meeting. For example: the code: print(m1)
+ * would produce the output:
+ * The meeting is scheduled on 2020-02-12 at 303S.G91 and with [Dick Smith, Michael Hill].
+ * The class should also provide functionality to add people into the meeting. For example:
+ * m1.addPersonToMeeting(p1);
+ * m1.addPersonToMeeting(p2);
+ * The class should also provide functionality to get the number of people in the meeting, the meeting date, the meeting place.
+ * For example, the code: System.out.println(m1.getNumberOfPeopleInMeeting())
+ * would produce the output:
+ * 2
  */
 class Person {
     private String firstName;
