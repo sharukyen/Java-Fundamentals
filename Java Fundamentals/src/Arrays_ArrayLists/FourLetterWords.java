@@ -2,7 +2,9 @@ package Arrays_ArrayLists;
 
 
 import java.util.ArrayList;
-
+/**
+ *Write a static method named get4LetterWords(String[] words) which takes an array of words as a parameter. The method returns an array list containing words which have a length of 4.
+ */
 public class FourLetterWords {
     public static ArrayList<String> get4LetterWords(String[] words){
         ArrayList<String> array = new ArrayList<String>();
