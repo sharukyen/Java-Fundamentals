@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- *
+ *Define a static method named extractWords(String filename) which reads all the words in the source text file. The method selects the words which start with a vowel and prints  them one by one (one word per line). The function returns the total number of words printed.
  */
 
 public class ExtractWords {
