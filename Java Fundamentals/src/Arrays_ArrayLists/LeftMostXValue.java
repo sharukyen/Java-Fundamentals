@@ -2,6 +2,9 @@ package Arrays_ArrayLists;
 
 import java.awt.*;
 
+/**
+ *Write a static method named getLeftMostXValue(Point[] pts) that takes an array of Point objects as a parameter and returns the smallest x coordinate value. For example, if the array contains 2 points: (150, 80) and (40, 90), then the method returns 40.
+ */
 public class LeftMostXValue {
     public static int getLeftMostXValue(Point[] pts) {
         int smallestSoFar = pts[0].x;
