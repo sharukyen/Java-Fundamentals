@@ -1,5 +1,5 @@
 package Classes_Enums;
-/*
+/**
 Consider the following enum:
 enum Material { WOOD, GRASS; }
 Define a static method named getFireRisk(double rainfall, Material item) which takes a double and an enum as parameters.
