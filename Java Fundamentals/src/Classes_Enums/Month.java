@@ -1,5 +1,5 @@
 package Classes_Enums;
-/*
+/**
 Define an enum named Month which represents the month of a year. The enum contains
 
 A public int constant field named JAN which represents January and the number of days in January is 31.
