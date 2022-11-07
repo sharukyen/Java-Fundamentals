@@ -1,7 +1,10 @@
 package Nested_Exceptions_FileIO;
 
 /**
+ *Define a static method named setValueAt(int[] numbers, int index, int value) which takes an array of integers, a index value and a value as parameters.
+ * The method overrides the value at the specified index position and returns true. If the index value is out of the range, the method should print "ERROR: Invalid index." and return false.
  *
+ * Note: you *must* use the try... except syntax in your solution and you can assume that the array is not empty.
  */
 
 public class setValueAt {
