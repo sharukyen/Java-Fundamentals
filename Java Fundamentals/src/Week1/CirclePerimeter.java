@@ -1,4 +1,4 @@
-package WeekOne;
+package Week1;
 
 /**
  * program which prints the area and perimeter of a circle. Print the result to 2 decimal places.
