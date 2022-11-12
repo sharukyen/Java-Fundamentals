@@ -1,4 +1,4 @@
-package WeekOne;
+package Week1;
 
 /**
  *converts an int to a String and converts from a String to an int.

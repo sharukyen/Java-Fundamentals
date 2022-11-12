@@ -1,4 +1,4 @@
-package WeekOne;
+package Week1;
 
 public enum Weekday {
     MONDAY,
